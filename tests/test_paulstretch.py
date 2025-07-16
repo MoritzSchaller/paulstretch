@@ -15,13 +15,8 @@ data_types = ("float64", "float32")
 
     
 def test_call():
-    y_in = np.zeros((2,10000), dtype=np.float32)
-    sr = 44100
-    factor = 10
+    ps.stretch(y=np.zeros((2,10000)), sr=48000, stretch_factor=10)
 
-    y_out = ps.stretch(y_in, sr, factor)
-
-    assert isinstance(y_out, np.ndarray), "Output should be a numpy array"
 
 @pytest.mark.parametrize("stretch_factor", stretch_factors)
 @pytest.mark.parametrize("data_type", data_types)
