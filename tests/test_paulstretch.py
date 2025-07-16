@@ -15,7 +15,7 @@ data_types = ("float64", "float32")
 
     
 def test_call():
-    ps.stretch(y=np.zeros((2,10000)), sr=48000, stretch_factor=10)
+    ps.stretch(y=np.zeros((10000,2)), sr=48000, stretch_factor=10)
 
 
 @pytest.mark.parametrize("stretch_factor", stretch_factors)
