@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-paulstretch = "paulstretch:main"
+paulstretch = "paulstretch.main:paulstretch"
 
 [build-system]
 requires = ["hatchling"]
