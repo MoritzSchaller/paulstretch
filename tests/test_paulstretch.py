@@ -23,10 +23,9 @@ def test_call():
 
     assert isinstance(y_out, np.ndarray), "Output should be a numpy array"
 
-
-@pytest.mark.parametrize("audio_file", audio_files)
-@pytest.mark.parametrize("data_type", data_types)
 @pytest.mark.parametrize("stretch_factor", stretch_factors)
+@pytest.mark.parametrize("data_type", data_types)
+@pytest.mark.parametrize("audio_file", audio_files)
 def test_stretch(audio_file, data_type, stretch_factor):
     
     y, sr = sf.read(audio_file, dtype=data_type)
@@ -34,3 +33,4 @@ def test_stretch(audio_file, data_type, stretch_factor):
     y_out = ps.stretch(y=y, sr=sr, stretch_factor=stretch_factor)
 
     assert isinstance(y_out, np.ndarray), "Output should be a numpy array"
+    assert y_out.dtype == y.dtype, "Data type of output should the be same as input"
