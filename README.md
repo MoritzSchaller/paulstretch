@@ -34,18 +34,9 @@ The project uses pytest as its testing framework.
 
     `uv build`
 
-3. Publish to the test pypi repository:
+3. Publish to the [python package index](https://pypi.org):
 
-    `uv run twine upload --repository testpypi dist/*`
+    `uv publish`
 
-    Enter your pypi API token when prompted for username.
-
-4. Test install from test pypi repository:
-
-    `pip install --index-url https://test.pypi.org/simple/ paulstretch`
-p
-5. Publish to pypi prepository:
-
-    `uv run twine upload dist/*`
-
-    Enter your pypi API token when prompted for username.
+    Enter your pypi credentials when prompted.
+    
