@@ -2,7 +2,7 @@
 
 A modern Python implementation of [Paul Nasca](https://github.com/paulnasca)'s [extreme sound stretch algorithm](https://www.paulnasca.com/algorithms-created-by-me#h.4c6i2abbt3xk). It allows for extremely high stretch factors like 10 or 1000 without introducing the unpleasant grainy artifacts of other time stretch algorithms. It does smear all the transients though.
 
-There is no modern and well maintained python package for this algorithm available on the package index. This is a fun DSP algorithm with a permissive license, so everyone should enjoy it!
+There was no modern and well maintained python package for this algorithm available on the package index, so I decided to make one. This is a fun DSP algorithm with a permissive license, so everyone should enjoy it!
 
 ### Installation
 
@@ -14,11 +14,13 @@ If you want to work with the [github repository](https://github.com/MoritzSchall
 
 ### Run Tests
 
-The project uses pytest as its testing framework. 
+The project uses pytest as its testing framework. Run them like this:
 
 `uv run pytest`
 
 ### Build & Publish Package
+
+To build and publish this package on the [python package index](https://pypi.org), this is what you (or rather I) should do:
 
 1. Increment Version if appropriate
 
@@ -31,12 +33,12 @@ The project uses pytest as its testing framework.
     `uv version --bump major`
 
 
-2. Build both the source distribution and the wheels:
+2. Build both the source distribution and the wheels
 
     `uv build`
 
 
-3. Publish to the [python package index](https://pypi.org):
+3. Publish the package:
 
     `uv publish`
 
