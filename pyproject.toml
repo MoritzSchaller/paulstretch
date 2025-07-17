@@ -19,4 +19,5 @@ build-backend = "hatchling.build"
 dev = [
     "pytest>=8",
     "soundfile>=0.13",
+    "twine>=6.1.0",
 ]
