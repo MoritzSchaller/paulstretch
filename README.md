@@ -14,8 +14,34 @@ The project uses pytest as its testing framework.
 
 `uv run pytest`
 
-### Build Package
+### Build & Publish Package
 
-To build both the source distribution and the wheels, run the following command.
+1. Increment Version if appropriate
 
-`uv build`
+    The package uses semantic versioning, so bump the version depending on the extent of changes.
+
+    `uv version --bump patch` or 
+
+    `uv version --bump minor` or 
+
+    `uv version --bump major`
+
+2. Build both the source distribution and the wheels:
+
+    `uv build`
+
+3. Publish to the test pypi repository:
+
+    `uv run twine upload --repository testpypi dist/*`
+
+    Enter your pypi API token when prompted for username.
+
+4. Test install from test pypi repository:
+
+    `pip install --index-url https://test.pypi.org/simple/ paulstretch`
+
+5. Publish to pypi prepository:
+
+    `uv run twine upload dist/*`
+
+    Enter your pypi API token when prompted for username.
