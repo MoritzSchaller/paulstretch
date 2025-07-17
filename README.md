@@ -6,7 +6,11 @@ There is no modern and well maintained python package for this algorithm availab
 
 ### Installation
 
-Install the latest version of the [uv package manager](https://docs.astral.sh/uv/). A virtual environment will automatically be installed when you run or build the project with uv.
+If you want to use this package in your own project, install it from the [python package index](https://pypi.org/project/paulstretch/):
+
+`pip install paulstretch`
+
+If you want to work with the [github repository](https://github.com/MoritzSchaller/paulstretch/), install the latest version of the [uv package manager](https://docs.astral.sh/uv/). A virtual environment will automatically be installed when you run or build the project with uv.
 
 ### Run Tests
 
@@ -39,7 +43,7 @@ The project uses pytest as its testing framework.
 4. Test install from test pypi repository:
 
     `pip install --index-url https://test.pypi.org/simple/ paulstretch`
-
+p
 5. Publish to pypi prepository:
 
     `uv run twine upload dist/*`
