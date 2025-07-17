@@ -30,13 +30,14 @@ The project uses pytest as its testing framework.
 
     `uv version --bump major`
 
+
 2. Build both the source distribution and the wheels:
 
     `uv build`
+
 
 3. Publish to the [python package index](https://pypi.org):
 
     `uv publish`
 
     Enter your pypi credentials when prompted.
-    
