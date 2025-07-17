@@ -1,6 +1,6 @@
 # Paulstretch
 
-A modern Python implementation of Paul Nasca's extreme time stretch algorithm. It allows for extremely high stretch factors like 10 or 1000 without introducing the unpleasant grainy artifacts of other time stretch algorithms. It does smear all the transients though.
+A modern Python implementation of [Paul Nasca](https://github.com/paulnasca)'s [extreme sound stretch algorithm](https://www.paulnasca.com/algorithms-created-by-me#h.4c6i2abbt3xk). It allows for extremely high stretch factors like 10 or 1000 without introducing the unpleasant grainy artifacts of other time stretch algorithms. It does smear all the transients though.
 
 There is no modern and well maintained python package for this algorithm available on the package index. This is a fun DSP algorithm with a permissive license, so everyone should enjoy it!
 
