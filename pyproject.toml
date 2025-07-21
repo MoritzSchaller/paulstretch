@@ -1,6 +1,6 @@
 [project]
 name = "paulstretch"
-version = "0.1.2"
+version = "0.1.3"
 description = "A modern Python implementation of Paul Nasca's extreme time stretch algorithm with minimal dependencies."
 readme = "README.md"
 authors = [
