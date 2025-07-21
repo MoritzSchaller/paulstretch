@@ -25,7 +25,7 @@ def stretch(y: np.ndarray, stretch_factor: float, window_size: int=2048) -> np.n
     
     # calculate window
 
-    window = np.power(1.0-np.power(np.linspace(-1.0 , 1.0, window_size), 2), 1.25)
+    window = np.sin(np.linspace(0 , np.pi, window_size))
     window = np.expand_dims(window, axis=1)
     window = np.tile(window, (1, n_channels))
     
